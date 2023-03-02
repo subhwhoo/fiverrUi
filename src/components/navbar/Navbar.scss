@@ -1,8 +1,17 @@
 .navbar{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #013914;
   color: white;
+  transition: 0.4s all ease;
+  position: sticky;
+  top: 0;
+
+  &.active{
+    background-color: white;
+    color: black;
+  }
   .container{
     width: 1400px;
     display: flex;
@@ -37,5 +46,18 @@
         }
       }
     }
+  }
+  hr{
+    width: 100%;
+    height: 0;
+    border: 0.5px solid lightgray;
+  }
+  .menu{
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: gray;
   }
 }
