@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,51 +8,80 @@
   position: sticky;
   top: 0;
 
-  &.active{
+  &.active {
     background-color: white;
     color: black;
   }
-  .container{
+  .container {
     width: 1400px;
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
-    .logo{
+    .logo {
       font-size: 34px;
       font-weight: bold;
-      .text{
-
+      .text {
       }
-      .dot{
+      .dot {
         color: #1dbf73;
       }
     }
-    .links{
+    .links {
       display: flex;
       gap: 24px;
       align-items: center;
       font-weight: 500;
-      button{
+
+      .user {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          border: 1px solid gray;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          color: gray;
+          width: 200px;
+          font-weight: 300;
+        }
+      }
+      button {
         color: white;
         padding: 10px 20px;
-        border-radius:5px ;
+        border-radius: 5px;
         border: 1px solid white;
-        cursor:pointer;
+        cursor: pointer;
         background-color: transparent;
 
-        &:hover{
+        &:hover {
           background-color: #1dbf73;
           border-color: #1dbf73;
         }
       }
     }
   }
-  hr{
+  hr {
     width: 100%;
     height: 0;
     border: 0.5px solid lightgray;
   }
-  .menu{
+  .menu {
     width: 1400px;
     padding: 10px 0px;
     display: flex;
