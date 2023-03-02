@@ -21,7 +21,6 @@ function App() {
       </div>
     );
   };
-
   const router = createBrowserRouter([
     {
       path: "/",
@@ -69,5 +68,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
