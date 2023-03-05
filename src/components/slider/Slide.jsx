@@ -3,7 +3,6 @@ import "./Slide.scss";
 import Slider from "infinite-react-carousel";
 import CatCard from "../catCard/CatCard";
 import { cards } from "../../data.js";
-
 const Slide = () => {
   return (
     <div className={"slide"}>
@@ -17,5 +16,4 @@ const Slide = () => {
     </div>
   );
 };
-
 export default Slide;
