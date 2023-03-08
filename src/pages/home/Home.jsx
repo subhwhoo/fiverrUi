@@ -2,19 +2,20 @@ import React from "react";
 import "./Home.scss";
 import Featured from "../../components/featured/Featured";
 import TrustedBy from "../../components/trustedBy/TrustedBy";
-import Slider from "../../components/slider/Slide";
-import { cards } from "../../data";
+import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
+import { cards } from "../../data";
+
 const Home = () => {
   return (
     <div className="home">
       <Featured />
       <TrustedBy />
-      <Slider>
+      <Slide slidesToShow={5} arrowsScroll={4}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
         ))}
-      </Slider>
+      </Slide>
     </div>
   );
 };
