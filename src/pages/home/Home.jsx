@@ -5,7 +5,6 @@ import TrustedBy from "../../components/trustedBy/TrustedBy";
 import Slider from "../../components/slider/Slide";
 import { cards } from "../../data";
 import CatCard from "../../components/catCard/CatCard";
-
 const Home = () => {
   return (
     <div className="home">
