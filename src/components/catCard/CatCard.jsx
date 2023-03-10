@@ -12,5 +12,4 @@ const CatCard = ({ card }) => {
     </Link>
   );
 };
-
 export default CatCard;
